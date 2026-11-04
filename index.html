@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversario</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Contenedor para las partículas flotantes -->
+    <div id="particles-container"></div>
+
+    <!-- Ventana 1: Inicio -->
+    <div id="pantalla-1" class="screen active">
+        <div class="window">
+            <div class="window-header">
+                <span>Aniversario3NicoSam.exe</span>
+                <div class="window-controls">_ □ X</div>
+            </div>
+            <div class="window-content grid-bg">
+                <!-- Decoraciones pixel art referenciadas -->
+                <div class="decor decor-1">🍓</div>
+                <div class="decor decor-2">🌸</div>
+                <div class="decor decor-3">🎀</div>
+                
+                <h1>Sorpresimta de aniversamrio</h1>
+                <p>¿Quieres ver?</p>
+                <div class="buttons">
+                    <button id="btn-si" class="btn-highlight">Sí 🥰</button>
+                    <button id="btn-no">No 😡</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ventana 2: Feliz Aniversario -->
+    <div id="pantalla-2" class="screen hidden">
+        <div class="window">
+            <div class="window-content grid-bg">
+                <br><br>
+                <h1 class="animated-text">¡FELIZ ANIVERSARIO, MI PRECIOMSO!</h1>
+                <p class="fade-text">En este día tan especial, quiero recordar <strong>algunas</strong> (de tantas) de las cositas bonitas que hemos vivido, y así, tener <strong>aún más motivos</strong> para seguir enamorados <strong>siemprem</strong>.</p>
+                <button id="btn-empezar" class="btn-highlight">Empezar</button>
+            </div>
+            <button id="volver-2" class="btn-volver">◄</button>
+        </div>
+    </div>
+
+    <!-- Ventana 3: Galería Dinámica -->
+    <div id="pantalla-3" class="screen hidden">
+        <div class="window">
+            <div class="window-content grid-bg">
+                <div class="photo-frame">
+                    <img id="foto-dinamica" src="resources/foto1.jpeg" alt="Nuestra foto">
+                </div>
+                <p id="texto-dinamico" class="photo-text">Empecemos con una de tus favoritas ñejeje</p>
+                <button id="volver-3" class="btn-volver">◄</button>
+                <button id="btn-siguiente" class="btn-arrow">Siguiente ➔</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Ventana 4: Carta -->
+    <div id="pantalla-4" class="screen hidden">
+        <div class="window">
+            <div class="window-content letter-bg">
+                <div class="decor decor-4">💌</div>
+                <p class="letter-text">
+                    Howla, mi preciomso
+                    <br>    
+                    Feliz aniversamriooo
+                    <br><br>
+                    Esto es solo una parte de las cosas que hemos hecho y vivido juntos (siempre es bonito recordar jeje).
+                    <br>
+                    Para eso son estos días de celebración, para ver que, aunque no parezca y se pase el tiempo rápido, hemos pasado por muchas cosas y sea lo que sea, siempre nos elegimos, nos apoyamos y nos amamos. (Esto lo escribí yo, no la IA, lo juro, aunque hayan 3 verbos (me traumé con eso jajaja), lo hice yob)
+                    <br>
+                    Sigamos creando recuerdos juntos, y por fitas... que me ames para siempre. Mua mua mua
+                    <br><br>
+                    Att, Tu princesimta Samiton123
+                </p>
+                <button id="volver-4" class="btn-volver">◄</button>
+                <button id="btn-finalizar" class="btn-highlight">Finalizar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ventana 5: Despedida -->
+    <div id="pantalla-5" class="screen hidden">
+        <div class="window">
+            <div class="window-content grid-bg">
+                <h2>Gracias por 3 años (oficiales) de felicidad, quiero que nos amemos por siempre</h2>
+                <div class="decor decor-2">✨</div>
+                <button id="volver-5" class="btn-volver">◄</button>
+                <button id="btn-reiniciar" class="btn-highlight">Reiniciar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
